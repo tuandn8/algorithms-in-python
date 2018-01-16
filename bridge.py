@@ -1,6 +1,15 @@
-from collections import defaultdict
-  
 #This class represents an undirected graph using adjacency list representation
+#Undirected graph has Euler cycle if:
+#  - All vertices are connected
+#  - All vertices have even degree
+#
+#Undirected graph has Euler path if
+#  - All vertices are connected 
+#  - Has zero or two vertices has odd degree, all others has even degree
+
+from collections import defaultdict
+
+
 class Graph:
   
     def __init__(self,vertices):
